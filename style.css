@@ -1,0 +1,142 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+
+.left{
+    width: 40%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.right{
+    width: 60%;
+    height: 100vh;
+    background-image: url('./login-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.left img{
+    width: 50%;
+    margin-bottom: 40px;
+}
+.left label{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.left input{
+    width: 60%;
+    height: 40px;
+    background: transparent;
+    border: 1px solid white;
+}
+.left button{
+    width: 60%;
+    height: 40px;
+    margin-top: 30px;
+    background-color: rgb(10, 82, 136);
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+.left a{
+    color: rgb(10, 82, 136);
+    text-decoration: none;
+    line-height: 30px;
+}
+.left hr{
+    width: 60%;
+}
+.left p{
+    color: white;
+    margin-top: 20px;
+}
+.line{
+    width: 1px;
+    height: 15px;
+    background-color: white;
+}
+
+.left span{
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.left span a{
+    color: white;
+}
+.left  label{
+    margin-right: 300px;
+}
+
+#email-label{
+    margin-right: 230px;
+}
+
+
+
+/* Responsive design css */
+
+
+@media (max-width : 768px) {
+
+    .container{
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+
+    }
+    .left{
+        width: 100%;
+        height: auto;
+        padding-block: 30px;
+
+    }
+
+    .right{
+       width: 100%;
+       height: 500px;
+    }
+
+    .left label{
+        margin-right: 0px;
+    }
+    #email-label{
+        margin-right: 0px;
+    }
+
+    .left p{
+        font-size: 12;
+        text-align: center;
+    }
+
+    .left span{
+        width: 60%;
+    }
+
+
+
+    
+}
